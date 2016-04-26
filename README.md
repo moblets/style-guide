@@ -35,7 +35,6 @@ In Atom, configure your keymap to use `Linter Eslint: Fix File` with alias.
 ```
 
 ## Hook to Git
-
 To always check the edited files with ESLint, add the hook on git repository.
 
 To add hook, create the file `pre-commit` in `.git/hooks` with command:
@@ -50,7 +49,8 @@ function lintit () {
   filesJsWithDiff=$(git diff --cached --name-only | grep -E '(.js)$')
   file=$(echo $filesJsWithDiff | tr '\n' ' ')
   rootDir=$(git rev-parse --show-toplevel)
-  e=$(eslint -c $rootDir/.eslintrc.js $file)
+  eslintFile=($rootDir/.eslintrc.*)
+  e=$(eslint -c $eslintFile $file)
   if [[ "$e" != *"0 problems"* ]]; then
     echo "ERROR: Check eslint hints."
     eslint -c $rootDir/.eslintrc.js $file
@@ -58,4 +58,5 @@ function lintit () {
   fi
 }
 lintit
+
 ```
