@@ -53,7 +53,7 @@ function lintit () {
   e=$(eslint -c $eslintFile $file)
   if [[ "$e" != *"0 problems"* ]]; then
     echo "ERROR: Check eslint hints."
-    eslint -c $rootDir/.eslintrc.js $file
+    eslint -c $eslintFile $file
     exit 1 # reject
   fi
 }
