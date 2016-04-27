@@ -4,7 +4,7 @@
 
 The code style is very, very important, to simplify the understanding and maintenance of the project in the future. The code needs maintenance, this is a fact, and working with a set of known rules from the begin of project is the best way to get used to the code style.
 
-In Moblets, we follow the style of [Google Javascript Style](https://google.github.io/styleguide/javascriptguide.xml) because it's complete and used by lots of open source projects.
+In Moblets, we follow the style of [Google Javascript Style](https://google.github.io/styleguide/javascriptguide.xml) in revision 2.93 because it's complete and used by lots of open source projects.
 
 ## Code Style Tools
 
@@ -16,7 +16,6 @@ To install the `eslint` with `google` and `jsdoc`, run this command in your term
 
     $ npm install -g eslint jsdoc eslint-config-google eslint-plugin-jsdoc
 
-
 ### IDE Plugins
 
 #### ESLint
@@ -25,6 +24,21 @@ To help us with the code style, we use the [eslint integration](http://eslint.or
 
 #### DocBlockr
  To the comments, we use DocBlockr plugins, that can be found for [Sublime Text](https://packagecontrol.io/packages/DocBlockr) and  [Atom](https://atom.io/packages/docblockr).
+
+
+### IDE and Plugins Settings
+Configure your IDE and plugin to follow rules of style guide:
+
+#### IDE
+* The style use the soft with 2 spaces.
+* The space/tab in end line is not good, set your IDE to remove on save.
+* Set the your IDE to add \n in end of file.
+
+#### DocBlockr
+Use the default configurations.
+
+#### ESLint
+Use the default configurations.
 
 #### Suggestions
 In Atom, configure your keymap to use `Linter Eslint: Fix File` with alias.
