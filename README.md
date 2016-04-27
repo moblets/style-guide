@@ -49,13 +49,13 @@ In Atom, configure your keymap to use `Linter Eslint: Fix File` with alias.
 ```
 
 ## Hook to Git
-To always check the edited files with ESLint, add the hook on git repository.
+To always check the edited files with ESLint, add the pre-commit hook on the git repository.
 
-To add hook, create the file `pre-commit` in `.git/hooks` with command:
+To add this hook, create the file `pre-commit` in `.git/hooks` with the following command:
 
     $ touch .git/hooks/pre-commit
 
-Insert on file the this code:
+Then, insert this code on the file:
 
 ```
 #!/bin/sh
