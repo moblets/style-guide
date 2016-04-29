@@ -1,4 +1,4 @@
-# Moblets JavaScript Style Guide
+# Moblets' JavaScript Style Guide
 
 ## Intro
 Code style is very important to simplify the understanding and maintenance of the project in the future. The code needs maintenance, this is a fact, and working with a set of known rules from the begining of the project is the best way to get used to the code style.
