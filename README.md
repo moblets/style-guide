@@ -25,7 +25,7 @@ As DocBlockr is only available to [Atom](https://atom.io/), [Sublime Text 2](htt
 ### 3. Dev dependencies
 In order to make your IDE use these tools in a project, you need to install some development dependencies. Run this command in the root of your project:
 
-    $ npm install --save-dev eslint#2.8.0 eslint-config-google#0.5.0 eslint-plugin-jsdoc#2.3.1 jsdoc#3.4.0
+    $ npm install --save-dev eslint@">=2.8 <3" eslint-config-google@">=0.5 < 1" eslint-plugin-jsdoc@">=2.3 < 3" jsdoc@">=3.4 <4"
 
 This will add these dev dependencies to your `package.json` file. You can find an example in the repository.
 
