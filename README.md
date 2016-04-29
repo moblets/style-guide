@@ -4,7 +4,18 @@
 
 The code style is very, very important, to simplify the understanding and maintenance of the project in the future. The code needs maintenance, this is a fact, and working with a set of known rules from the begin of project is the best way to get used to the code style.
 
-In Moblets, we follow the style of [Google Javascript Style](https://google.github.io/styleguide/javascriptguide.xml) in revision 2.93 because it's complete and used by lots of open source projects.
+In Moblets, we follow the style of [Google Javascript Style] in revision 2.93 because it's complete and used by lots of open source projects.
+
+### File names
+[Google Javascript Style] has 2 possible file name interpretations. In the first case, it says file names should have the whole file name in lower case, with no separations, like "```thisisthefilename.js```":
+
+>"In general, use functionNamesLikeThis… …and **filenameslikethis.js**".
+
+After that, they say that filenames may contain hyphens or underscores (preferably hyphens), like "```this-is-the-file-name.js```":
+
+>"Filenames should be **all lowercase**… …no punctuation except for - or _ (**prefer - to _**)".
+
+In order to improve the name readability, we will use the second case, so, Moblets file names should use the hyphen separation style.
 
 ## Code Style Tools
 
@@ -74,3 +85,5 @@ function lintit () {
 lintit
 
 ```
+
+[Google Javascript Style]: https://google.github.io/styleguide/javascriptguide.xml
