@@ -60,19 +60,6 @@ Use DocBlockr default configurations.
 ### ESLint configurations
 Use ESLint default configurations.
 
-### File names
-[Google Javascript Style] has 2 possible interpretations about file names.
-
-In the first case, it says file names should have the **whole file name in lower case**, with no separations, like "`thisisthefilename.js`":
-
->"In general, use functionNamesLikeThis… …and **filenameslikethis.js**".
-
-After that, they say that **filenames may contain hyphens**, like "`this-is-the-file-name.js`":
-
->"Filenames should be **all lowercase**… …no punctuation except for - or _ (**prefer - to _**)".
-
-In order to improve the name readability, we will use the second case, so, **Moblets file names should use the hyphen separation style**.
-
 ### Suggestions
 In Atom, configure your keymap to use `Linter Eslint: Fix File` with an alias.
 
@@ -109,5 +96,47 @@ function lintit () {
 lintit
 
 ```
+
+## API documentation
+In order to create API documentations, we use [Documentation](https://github.com/documentationjs/documentation) tool.
+
+# Points of attention in Google Javascript Style
+There are some unnusual or 'optional' points in [Google Javascript Style] that will be highlighted here,
+
+
+## Files and folders names
+[Google Javascript Style] has 2 possible interpretations about [file names](https://google.github.io/styleguide/javascriptguide.xml?showone=Naming#Naming).
+
+In the first case, it says file names should have the **whole file name in lower case**, with no separations, like "`thisisthefilename.js`":
+
+>"In general, use functionNamesLikeThis… …and **filenameslikethis.js**".
+
+After that, they say that **filenames may contain hyphens**, like "`this-is-the-file-name.js`":
+
+>"Filenames should be **all lowercase**… …no punctuation except for - or _ (**prefer - to _**)".
+
+In order to improve the name readability, we will use the second case, so, **Moblets file names should use the hyphen separation style**.
+
+In *Moblets* wi'll use this rule to **files** and **folders**.
+
+## Iterate over arrays using 'for-in'
+The use of '[for-in](https://google.github.io/styleguide/javascriptguide.xml?showone=for-in_loop#for-in_loop)' – for (var key in object) – must be used only to iterate objects, never to iterate arrays.
+
+## Properties and methods [names](https://google.github.io/styleguide/javascriptguide.xml?showone=Naming#Naming)
+Private properties and methods should be named with a trailing underscore.
+
+Protected properties and methods should be named without a trailing underscore (like public ones).
+
+## Parentheses
+Never use [parentheses](https://google.github.io/styleguide/javascriptguide.xml?showone=Parentheses#Parentheses) for unary operators such as delete, *typeof* and void or after keywords such as *return*, throw as well as others (case, in or new).
+
+## Strings
+Prefer single-quotes (') than double quotes ("") for [strings](https://google.github.io/styleguide/javascriptguide.xml?showone=Strings#Strings).
+
+This is helpful when creating strings that include HTML.
+
+## JavaScript Types
+[Types](https://google.github.io/styleguide/javascriptguide.xml?showone=JavaScript_Types#JavaScript_Types)
+
 
 [Google Javascript Style]: https://google.github.io/styleguide/javascriptguide.xml
