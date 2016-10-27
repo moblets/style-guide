@@ -4,8 +4,7 @@
 
 1. [Introduction](#introduction)
 1. [Helper Style Tools](#helper-style-tools)
-1. [ESLint IDE Plugin](#eslint-ide-plugin)
-1. [IDE Plugins](#ide-plugins)
+1. [IDE Plugins](#ide-plugin)
 1. [IDE configuration](#ide-configuration)
 1. [API documentation](#api-documentation)
 1. [Points of attention](#-points-of-attention)
